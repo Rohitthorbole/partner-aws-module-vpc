@@ -5,6 +5,12 @@ variable "region" {
     description = "The AWS region where the VPC will be created."
 }
 
+variable "env" {
+  type = string
+  default = "dev"
+  description = "Specify the environment"
+}
+
 //variables for the VPC
 
 variable "vpc_name" {
