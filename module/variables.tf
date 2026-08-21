@@ -1,7 +1,7 @@
 //Common variables for the VPC module
 variable "region" {
     type = string
-    default = "us-ease-1"
+  default = "us-east-1"
     description = "The AWS region where the VPC will be created."
 }
 
@@ -45,6 +45,5 @@ variable "route_table_name" {
 variable "create_route" {
   type = object({
     cidr = string
-    gateway_id = string
   })
 }
