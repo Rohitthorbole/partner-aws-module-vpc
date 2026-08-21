@@ -28,3 +28,17 @@ variable "subnet_cidr" {
     type = string
     description = "The cidr of the subnet. Must be provided"
 }
+
+//variables for route tables
+
+variable "route_table_name" {
+    type = string
+    description = "The name of the route table."
+}
+
+variable "create_route" {
+  type = object({
+    cidr = string
+    gateway_id = string
+  })
+}
