@@ -1,4 +1,4 @@
-//Common variables for the VPC module
+//Common variables for the VPC module.
 variable "region" {
     type = string
   default = "us-east-1"
