@@ -21,7 +21,7 @@ provider "aws" {
 
 module "vpc" {
 	source = "../partner-aws-module-vpc/module"
-
+	#Assign values as per your requirements
 	vpc_cidr        = "10.0.0.0/16"
 	subnet_name     = "dev-public-subnet"
 	subnet_cidr     = "10.0.1.0/24"
